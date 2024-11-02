@@ -11,7 +11,7 @@ namespace Zadanie1
     {
         private string name;
         private double ves;
-        //проверка веса на цифры и значения(не равно 0 и не меньше)
+        //проверка веса на цифры и значения(не рвно 0 и не меньше)
         public double Ves
         {
             get

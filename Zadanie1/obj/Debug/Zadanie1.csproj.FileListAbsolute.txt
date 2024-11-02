@@ -5,10 +5,3 @@ C:\Users\305-11\Desktop\Маринина\Zadanie1\obj\Debug\Zadanie1.csproj.Asse
 C:\Users\305-11\Desktop\Маринина\Zadanie1\obj\Debug\Zadanie1.csproj.CoreCompileInputs.cache
 C:\Users\305-11\Desktop\Маринина\Zadanie1\obj\Debug\Zadanie1.exe
 C:\Users\305-11\Desktop\Маринина\Zadanie1\obj\Debug\Zadanie1.pdb
-C:\Users\Professional\Desktop\Zadanie1\bin\Debug\Zadanie1.exe.config
-C:\Users\Professional\Desktop\Zadanie1\bin\Debug\Zadanie1.exe
-C:\Users\Professional\Desktop\Zadanie1\bin\Debug\Zadanie1.pdb
-C:\Users\Professional\Desktop\Zadanie1\obj\Debug\Zadanie1.csproj.AssemblyReference.cache
-C:\Users\Professional\Desktop\Zadanie1\obj\Debug\Zadanie1.csproj.CoreCompileInputs.cache
-C:\Users\Professional\Desktop\Zadanie1\obj\Debug\Zadanie1.exe
-C:\Users\Professional\Desktop\Zadanie1\obj\Debug\Zadanie1.pdb

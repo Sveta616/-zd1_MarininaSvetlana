@@ -1,0 +1,10 @@
+C:\Users\305-11\Desktop\Маринина\Zadanie2\bin\Debug\Zadanie2.exe.config
+C:\Users\305-11\Desktop\Маринина\Zadanie2\bin\Debug\Zadanie2.exe
+C:\Users\305-11\Desktop\Маринина\Zadanie2\bin\Debug\Zadanie2.pdb
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.csproj.AssemblyReference.cache
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.Form1.resources
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.Properties.Resources.resources
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.csproj.GenerateResource.cache
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.csproj.CoreCompileInputs.cache
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.exe
+C:\Users\305-11\Desktop\Маринина\Zadanie2\obj\Debug\Zadanie2.pdb
