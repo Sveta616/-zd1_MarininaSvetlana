@@ -133,13 +133,73 @@ namespace Zadanie2
         private void AddNewSong_Click_1(object sender, EventArgs e)
         {
             string author, name, filename;
-            author = textBox6.Text;
-            name = textBox5.Text;
+            author = AuthorText.Text;
+            name = Nametext.Text;
             filename = Path.Text;
+
+            
+            if (string.IsNullOrWhiteSpace(author) || string.IsNullOrWhiteSpace(name) || string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Заполните все поля");
+                return;
+            }
+            if (author.Length == 0 || !char.IsUpper(author[0]))
+            {
+                MessageBox.Show("Автор должен начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < author.Length; i++)
+            {
+                if (!char.IsLower(author[i]))
+                {
+                    MessageBox.Show("Автор должен содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
+
+            if (name.Length == 0 || !char.IsUpper(name[0]))
+            {
+                MessageBox.Show("Название песни должно начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < name.Length; i++)
+            {
+                if (!char.IsLower(name[i]))
+                {
+                    MessageBox.Show("Название песни должно содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
+
+            if (string.IsNullOrWhiteSpace(filename) || string.IsNullOrWhiteSpace(filename) || string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Заполните все поля");
+                return;
+            }
+            if (filename.Length == 0 || !char.IsUpper(filename[0]))
+            {
+                MessageBox.Show("Автор должен начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < filename.Length; i++)
+            {
+                if (!char.IsLower(filename[i]))
+                {
+                    MessageBox.Show("Автор должен содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
+
             playlist.AddSong(author, name, filename);
-            textBox6.ResetText();
-            textBox5.ResetText();
+            AuthorText.ResetText();
+            Nametext.ResetText();
             Path.ResetText();
+            Author.Text = author;
+            SongName.Text = name;
+            FileName.Text = filename;
             MessageBox.Show("Песня добавлена!");
         }
 
@@ -158,6 +218,9 @@ namespace Zadanie2
             {
                 MessageBox.Show("Плейлист удален");
                 playlist.Clear();
+                Author.Text = " ";
+                SongName.Text = " ";
+                FileName.Text = " ";
 
             }
             else if (result == DialogResult.No)
@@ -181,6 +244,66 @@ namespace Zadanie2
         //Удалить объект в плейлисте
         private void DeleteZnClick_1(object sender, EventArgs e)
         {
+            string author, name, filename;
+            author = AuthorDel.Text;
+            name = NameDel.Text;
+            filename = PathDel.Text;
+
+
+            if (string.IsNullOrWhiteSpace(author) || string.IsNullOrWhiteSpace(name) || string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Заполните все поля");
+                return;
+            }
+            if (author.Length == 0 || !char.IsUpper(author[0]))
+            {
+                MessageBox.Show("Автор должен начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < author.Length; i++)
+            {
+                if (!char.IsLower(author[i]))
+                {
+                    MessageBox.Show("Автор должен содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
+
+            if (name.Length == 0 || !char.IsUpper(name[0]))
+            {
+                MessageBox.Show("Название песни должно начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < name.Length; i++)
+            {
+                if (!char.IsLower(name[i]))
+                {
+                    MessageBox.Show("Название песни должно содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
+
+            if (string.IsNullOrWhiteSpace(filename) || string.IsNullOrWhiteSpace(filename) || string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Заполните все поля");
+                return;
+            }
+            if (filename.Length == 0 || !char.IsUpper(filename[0]))
+            {
+                MessageBox.Show("Автор должен начинаться с заглавной буквы");
+                return;
+            }
+            for (int i = 1; i < filename.Length; i++)
+            {
+                if (!char.IsLower(filename[i]))
+                {
+                    MessageBox.Show("Автор должен содержать только буквы, начиная с заглавной");
+                    return;
+                }
+            }
+
             playlist.RemoveSong(song);
             UpdateSong();
         }

@@ -48,8 +48,8 @@ namespace Zadanie2
             this.label20 = new System.Windows.Forms.Label();
             this.AddNewSong = new System.Windows.Forms.Button();
             this.Path = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Nametext = new System.Windows.Forms.TextBox();
+            this.AuthorText = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.PStart = new System.Windows.Forms.Panel();
             this.GoStart = new System.Windows.Forms.Button();
@@ -66,9 +66,9 @@ namespace Zadanie2
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.DeleteZn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PathDel = new System.Windows.Forms.TextBox();
+            this.NameDel = new System.Windows.Forms.TextBox();
+            this.AuthorDel = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PlaylistClear = new System.Windows.Forms.Button();
@@ -80,7 +80,7 @@ namespace Zadanie2
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -93,6 +93,7 @@ namespace Zadanie2
             this.DeleteP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DelIndex)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -254,6 +255,7 @@ namespace Zadanie2
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.LightPink;
+            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.AddSong);
             this.tabPage2.Controls.Add(this.PStart);
             this.tabPage2.Controls.Add(this.ToIndex);
@@ -269,17 +271,20 @@ namespace Zadanie2
             // AddSong
             // 
             this.AddSong.BackColor = System.Drawing.Color.Plum;
+            this.AddSong.Controls.Add(this.BackSong);
+            this.AddSong.Controls.Add(this.NextSong);
+            this.AddSong.Controls.Add(this.PlaylistClear);
             this.AddSong.Controls.Add(this.label12);
             this.AddSong.Controls.Add(this.label4);
             this.AddSong.Controls.Add(this.label20);
             this.AddSong.Controls.Add(this.AddNewSong);
             this.AddSong.Controls.Add(this.Path);
-            this.AddSong.Controls.Add(this.textBox5);
-            this.AddSong.Controls.Add(this.textBox6);
+            this.AddSong.Controls.Add(this.Nametext);
+            this.AddSong.Controls.Add(this.AuthorText);
             this.AddSong.Controls.Add(this.label21);
-            this.AddSong.Location = new System.Drawing.Point(391, 3);
+            this.AddSong.Location = new System.Drawing.Point(377, 3);
             this.AddSong.Name = "AddSong";
-            this.AddSong.Size = new System.Drawing.Size(318, 456);
+            this.AddSong.Size = new System.Drawing.Size(318, 545);
             this.AddSong.TabIndex = 18;
             // 
             // label12
@@ -318,7 +323,7 @@ namespace Zadanie2
             this.AddNewSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddNewSong.Location = new System.Drawing.Point(80, 340);
             this.AddNewSong.Name = "AddNewSong";
-            this.AddNewSong.Size = new System.Drawing.Size(157, 38);
+            this.AddNewSong.Size = new System.Drawing.Size(157, 52);
             this.AddNewSong.TabIndex = 4;
             this.AddNewSong.Text = "Добавить";
             this.AddNewSong.UseVisualStyleBackColor = false;
@@ -331,19 +336,19 @@ namespace Zadanie2
             this.Path.Size = new System.Drawing.Size(100, 20);
             this.Path.TabIndex = 3;
             // 
-            // textBox5
+            // Nametext
             // 
-            this.textBox5.Location = new System.Drawing.Point(106, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 2;
+            this.Nametext.Location = new System.Drawing.Point(106, 207);
+            this.Nametext.Name = "Nametext";
+            this.Nametext.Size = new System.Drawing.Size(100, 20);
+            this.Nametext.TabIndex = 2;
             // 
-            // textBox6
+            // AuthorText
             // 
-            this.textBox6.Location = new System.Drawing.Point(106, 128);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 1;
+            this.AuthorText.Location = new System.Drawing.Point(106, 128);
+            this.AuthorText.Name = "AuthorText";
+            this.AuthorText.Size = new System.Drawing.Size(100, 20);
+            this.AuthorText.TabIndex = 1;
             // 
             // label21
             // 
@@ -360,7 +365,7 @@ namespace Zadanie2
             this.PStart.BackColor = System.Drawing.Color.Plum;
             this.PStart.Controls.Add(this.GoStart);
             this.PStart.Controls.Add(this.label18);
-            this.PStart.Location = new System.Drawing.Point(719, 275);
+            this.PStart.Location = new System.Drawing.Point(724, 210);
             this.PStart.Name = "PStart";
             this.PStart.Size = new System.Drawing.Size(321, 138);
             this.PStart.TabIndex = 15;
@@ -393,7 +398,7 @@ namespace Zadanie2
             this.ToIndex.Controls.Add(this.GoIndex);
             this.ToIndex.Controls.Add(this.label17);
             this.ToIndex.Controls.Add(this.SongIndex);
-            this.ToIndex.Location = new System.Drawing.Point(717, 68);
+            this.ToIndex.Location = new System.Drawing.Point(719, 26);
             this.ToIndex.Name = "ToIndex";
             this.ToIndex.Size = new System.Drawing.Size(323, 143);
             this.ToIndex.TabIndex = 13;
@@ -430,27 +435,24 @@ namespace Zadanie2
             // DeleteP
             // 
             this.DeleteP.BackColor = System.Drawing.Color.Plum;
-            this.DeleteP.Controls.Add(this.DeleteIndex);
-            this.DeleteP.Controls.Add(this.DelIndex);
-            this.DeleteP.Controls.Add(this.label19);
             this.DeleteP.Controls.Add(this.label13);
             this.DeleteP.Controls.Add(this.label14);
             this.DeleteP.Controls.Add(this.label15);
             this.DeleteP.Controls.Add(this.DeleteZn);
-            this.DeleteP.Controls.Add(this.textBox2);
-            this.DeleteP.Controls.Add(this.textBox3);
-            this.DeleteP.Controls.Add(this.textBox4);
+            this.DeleteP.Controls.Add(this.PathDel);
+            this.DeleteP.Controls.Add(this.NameDel);
+            this.DeleteP.Controls.Add(this.AuthorDel);
             this.DeleteP.Controls.Add(this.label16);
-            this.DeleteP.Location = new System.Drawing.Point(3, 470);
+            this.DeleteP.Location = new System.Drawing.Point(61, 340);
             this.DeleteP.Name = "DeleteP";
-            this.DeleteP.Size = new System.Drawing.Size(1037, 130);
+            this.DeleteP.Size = new System.Drawing.Size(270, 235);
             this.DeleteP.TabIndex = 11;
             // 
             // DeleteIndex
             // 
             this.DeleteIndex.BackColor = System.Drawing.Color.Orchid;
             this.DeleteIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteIndex.Location = new System.Drawing.Point(798, 78);
+            this.DeleteIndex.Location = new System.Drawing.Point(86, 87);
             this.DeleteIndex.Name = "DeleteIndex";
             this.DeleteIndex.Size = new System.Drawing.Size(100, 37);
             this.DeleteIndex.TabIndex = 10;
@@ -460,16 +462,16 @@ namespace Zadanie2
             // 
             // DelIndex
             // 
-            this.DelIndex.Location = new System.Drawing.Point(702, 48);
+            this.DelIndex.Location = new System.Drawing.Point(45, 61);
             this.DelIndex.Name = "DelIndex";
-            this.DelIndex.Size = new System.Drawing.Size(276, 20);
+            this.DelIndex.Size = new System.Drawing.Size(196, 20);
             this.DelIndex.TabIndex = 9;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(735, 12);
+            this.label19.Location = new System.Drawing.Point(26, 27);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(215, 16);
             this.label19.TabIndex = 8;
@@ -479,7 +481,7 @@ namespace Zadanie2
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(361, 39);
+            this.label13.Location = new System.Drawing.Point(73, 127);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(104, 16);
             this.label13.TabIndex = 7;
@@ -489,7 +491,7 @@ namespace Zadanie2
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(105, 81);
+            this.label14.Location = new System.Drawing.Point(94, 81);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(73, 16);
             this.label14.TabIndex = 6;
@@ -499,7 +501,7 @@ namespace Zadanie2
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(116, 39);
+            this.label15.Location = new System.Drawing.Point(109, 39);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(47, 16);
             this.label15.TabIndex = 5;
@@ -509,7 +511,7 @@ namespace Zadanie2
             // 
             this.DeleteZn.BackColor = System.Drawing.Color.Orchid;
             this.DeleteZn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteZn.Location = new System.Drawing.Point(364, 84);
+            this.DeleteZn.Location = new System.Drawing.Point(76, 188);
             this.DeleteZn.Name = "DeleteZn";
             this.DeleteZn.Size = new System.Drawing.Size(100, 35);
             this.DeleteZn.TabIndex = 4;
@@ -517,32 +519,32 @@ namespace Zadanie2
             this.DeleteZn.UseVisualStyleBackColor = false;
             this.DeleteZn.Click += new System.EventHandler(this.DeleteZnClick_1);
             // 
-            // textBox2
+            // PathDel
             // 
-            this.textBox2.Location = new System.Drawing.Point(364, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.PathDel.Location = new System.Drawing.Point(76, 148);
+            this.PathDel.Name = "PathDel";
+            this.PathDel.Size = new System.Drawing.Size(112, 20);
+            this.PathDel.TabIndex = 3;
             // 
-            // textBox3
+            // NameDel
             // 
-            this.textBox3.Location = new System.Drawing.Point(89, 99);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.NameDel.Location = new System.Drawing.Point(77, 100);
+            this.NameDel.Name = "NameDel";
+            this.NameDel.Size = new System.Drawing.Size(111, 20);
+            this.NameDel.TabIndex = 2;
             // 
-            // textBox4
+            // AuthorDel
             // 
-            this.textBox4.Location = new System.Drawing.Point(89, 58);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.AuthorDel.Location = new System.Drawing.Point(77, 58);
+            this.AuthorDel.Name = "AuthorDel";
+            this.AuthorDel.Size = new System.Drawing.Size(111, 20);
+            this.AuthorDel.TabIndex = 1;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(176, 12);
+            this.label16.Location = new System.Drawing.Point(27, 13);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(228, 16);
             this.label16.TabIndex = 0;
@@ -551,39 +553,35 @@ namespace Zadanie2
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.PlaylistClear);
-            this.panel1.Controls.Add(this.NextSong);
-            this.panel1.Controls.Add(this.BackSong);
             this.panel1.Controls.Add(this.FileName);
             this.panel1.Controls.Add(this.SongName);
             this.panel1.Controls.Add(this.Author);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Location = new System.Drawing.Point(61, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(369, 464);
+            this.panel1.Size = new System.Drawing.Size(270, 263);
             this.panel1.TabIndex = 8;
             // 
             // PlaylistClear
             // 
             this.PlaylistClear.BackColor = System.Drawing.Color.Orchid;
             this.PlaylistClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlaylistClear.Location = new System.Drawing.Point(118, 376);
+            this.PlaylistClear.Location = new System.Drawing.Point(119, 454);
             this.PlaylistClear.Name = "PlaylistClear";
-            this.PlaylistClear.Size = new System.Drawing.Size(133, 50);
+            this.PlaylistClear.Size = new System.Drawing.Size(87, 37);
             this.PlaylistClear.TabIndex = 9;
-            this.PlaylistClear.Text = "Очистить плейлист";
+            this.PlaylistClear.Text = "Очистить ";
             this.PlaylistClear.UseVisualStyleBackColor = false;
             this.PlaylistClear.Click += new System.EventHandler(this.PlaylistClear_Click_1);
             // 
             // NextSong
             // 
             this.NextSong.BackColor = System.Drawing.Color.SlateBlue;
-            this.NextSong.Location = new System.Drawing.Point(273, 376);
+            this.NextSong.Location = new System.Drawing.Point(224, 458);
             this.NextSong.Name = "NextSong";
-            this.NextSong.Size = new System.Drawing.Size(59, 50);
+            this.NextSong.Size = new System.Drawing.Size(35, 28);
             this.NextSong.TabIndex = 8;
             this.NextSong.Text = ">";
             this.NextSong.UseVisualStyleBackColor = false;
@@ -592,9 +590,9 @@ namespace Zadanie2
             // BackSong
             // 
             this.BackSong.BackColor = System.Drawing.Color.SlateBlue;
-            this.BackSong.Location = new System.Drawing.Point(27, 376);
+            this.BackSong.Location = new System.Drawing.Point(63, 458);
             this.BackSong.Name = "BackSong";
-            this.BackSong.Size = new System.Drawing.Size(59, 50);
+            this.BackSong.Size = new System.Drawing.Size(35, 28);
             this.BackSong.TabIndex = 7;
             this.BackSong.Text = "<";
             this.BackSong.UseVisualStyleBackColor = false;
@@ -604,7 +602,7 @@ namespace Zadanie2
             // 
             this.FileName.AutoSize = true;
             this.FileName.Font = new System.Drawing.Font("Microsoft Uighur", 10F, System.Drawing.FontStyle.Italic);
-            this.FileName.Location = new System.Drawing.Point(23, 287);
+            this.FileName.Location = new System.Drawing.Point(168, 181);
             this.FileName.Name = "FileName";
             this.FileName.Size = new System.Drawing.Size(12, 21);
             this.FileName.TabIndex = 6;
@@ -614,7 +612,7 @@ namespace Zadanie2
             // 
             this.SongName.AutoSize = true;
             this.SongName.Font = new System.Drawing.Font("Microsoft Uighur", 10F, System.Drawing.FontStyle.Italic);
-            this.SongName.Location = new System.Drawing.Point(23, 208);
+            this.SongName.Location = new System.Drawing.Point(120, 106);
             this.SongName.Name = "SongName";
             this.SongName.Size = new System.Drawing.Size(12, 21);
             this.SongName.TabIndex = 5;
@@ -624,7 +622,7 @@ namespace Zadanie2
             // 
             this.Author.AutoSize = true;
             this.Author.Font = new System.Drawing.Font("Microsoft Uighur", 10F, System.Drawing.FontStyle.Italic);
-            this.Author.Location = new System.Drawing.Point(23, 129);
+            this.Author.Location = new System.Drawing.Point(95, 30);
             this.Author.Name = "Author";
             this.Author.Size = new System.Drawing.Size(12, 21);
             this.Author.TabIndex = 4;
@@ -634,7 +632,7 @@ namespace Zadanie2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(23, 249);
+            this.label8.Location = new System.Drawing.Point(14, 181);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 20);
             this.label8.TabIndex = 3;
@@ -644,7 +642,7 @@ namespace Zadanie2
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(23, 174);
+            this.label7.Location = new System.Drawing.Point(14, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 20);
             this.label7.TabIndex = 2;
@@ -654,21 +652,22 @@ namespace Zadanie2
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(25, 95);
+            this.label6.Location = new System.Drawing.Point(16, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Автор";
             // 
-            // label5
+            // panel2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(111, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 42);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "PlayList";
+            this.panel2.BackColor = System.Drawing.Color.Plum;
+            this.panel2.Controls.Add(this.DeleteIndex);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.DelIndex);
+            this.panel2.Location = new System.Drawing.Point(754, 409);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(260, 147);
+            this.panel2.TabIndex = 7;
             // 
             // Form1
             // 
@@ -698,6 +697,8 @@ namespace Zadanie2
             ((System.ComponentModel.ISupportInitialize)(this.DelIndex)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -723,8 +724,8 @@ namespace Zadanie2
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button AddNewSong;
         private System.Windows.Forms.TextBox Path;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Nametext;
+        private System.Windows.Forms.TextBox AuthorText;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel PStart;
         private System.Windows.Forms.Button GoStart;
@@ -741,9 +742,9 @@ namespace Zadanie2
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button DeleteZn;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PathDel;
+        private System.Windows.Forms.TextBox NameDel;
+        private System.Windows.Forms.TextBox AuthorDel;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button PlaylistClear;
@@ -755,7 +756,7 @@ namespace Zadanie2
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
